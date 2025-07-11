@@ -1,0 +1,20 @@
+plugins {
+    id("java")
+}
+
+group = "org.example"
+version = "1.0-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    testImplementation("junit:junit:4.13.1")
+    implementation("org.seleniumhq.selenium:selenium-java:4.32.0")
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
